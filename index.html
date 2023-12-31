@@ -16,7 +16,7 @@
       <div class="title">Komut İstemi</div>
     </div>
     <div class="body" id="terminal-body">
-      <p>Hoş geldiniz! Lütfen bir komut girin./ndsadsadsa</p>
+      <p>Hoş geldiniz! Lütfen bir komut girin.</p>
     </div>
     <div class="input-line">
       <span>$</span>
@@ -25,5 +25,41 @@
   </div>
 
   <script src="../script.js"></script>
+
+  <script>
+    const commands = [
+      {
+        name: "Ben kimim?",
+        response: "Siz bir kullanıcı olarak web üzerinde benimle etkileşimde bulunan harika bir insansınız!"
+      },
+      {
+        name: "Alanım ne?",
+        response: "Alanınız, ilgi ve uzmanlık alanınız, burada belirtmek istediğiniz konular hakkında olabilir."
+      },
+      {
+        name: "Bağlantılar",
+        response: "Bağlantılarınızı görmek için lütfen şu sayfaya gidin: <a href='baglantilar.html'>Bağlantılar</a>"
+      },
+      {
+        name: "İletişim",
+        response: "İletişim bilgilerinizi paylaşmak için lütfen şu sayfaya gidin: <a href='iletisim.html'>İletişim</a>"
+      }
+    ];
+
+    const terminalBody = document.getElementById("terminal-body");
+    const commandInput = document.getElementById("command-input");
+
+    commandInput.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") {
+        const command = commandInput.value;
+        const output = document.createElement("p");
+        const matchedCommand = commands.find(cmd => cmd.name.toLowerCase() === command.toLowerCase());
+        output.innerHTML = matchedCommand ? matchedCommand.response : "Geçersiz komut. Lütfen başka bir komut deneyin.";
+        terminalBody.appendChild(output);
+        commandInput.value = "";
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+    });
+  </script>
 </body>
 </html>
