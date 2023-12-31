@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.profile {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
