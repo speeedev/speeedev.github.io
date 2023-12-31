@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kişisel Web Sitesi</title>
+  <title>Komut İstemi</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="profile">
-      <img src="link-to-your-image.jpg" alt="Profil Resmi">
-      <h1>Adınız</h1>
-      <p>Buraya açıklama yazabilirsiniz.</p>
-      <div class="social-icons">
-        <a href="link-to-your-facebook" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="link-to-your-twitter" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-        <!-- Diğer sosyal medya ikonlarını ekleyebilirsiniz -->
+  <div class="terminal">
+    <div class="header">
+      <div class="buttons">
+        <div class="close"></div>
+        <div class="minimize"></div>
+        <div class="maximize"></div>
       </div>
+      <div class="title">Komut İstemi</div>
+    </div>
+    <div class="body" id="terminal-body">
+      <p>Hoş geldiniz! Lütfen bir komut girin.</p>
+    </div>
+    <div class="input-line">
+      <span>$</span>
+      <input type="text" id="command-input" autofocus>
     </div>
   </div>
+
+  <script src="../script.js"></script>
 </body>
 </html>
