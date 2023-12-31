@@ -20,16 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (command.toLowerCase() === "2") {
       return "Ana alanım mobil uygulama geliştirme. Bunun için Flutter teknolojisini kullanmaktayım. Fakat bir web sitesi geliştirebilecek kadar bilgim de yok değil.";
     }
-if (command.toLowerCase() === "3") {
-  return "GitHub => https://github.com/speeedev";
-}
-if (command.toLowerCase() === "3") {
-  return "LinkedIn => https://www.linkedin.com/in/speedev/";
-}
-if (command.toLowerCase() === "3") {
-  return "Instagram => https://www.instagram.com/spee.dev";
-}
-
+    if (command.toLowerCase() === "3") {
+      return "['https://github.com/speeedev', 'https://www.linkedin.com/in/speedev/', 'https://www.instagram.com/spee.dev']";
+    }
 
 
     if (command.toLowerCase() === "4") {
