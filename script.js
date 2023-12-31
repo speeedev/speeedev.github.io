@@ -14,11 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function executeCommand(command) {
-    // Buraya komutları işleyen kodları ekleyebilirsiniz.
-    // Örnek:
-    if (command.toLowerCase() === "hello") {
-      return "Merhaba! Nasılsınız?";
-    } else {
+    if (command.toLowerCase() === "1") {
+      return "Merhaba! Ben Emir. Küçük yaşlarımdan beri süren yazılıma olan merakımı işi haline getiren bir gencim. Yazılıma ek olarak editörlük de yapmaktayım.";
+    }
+    if (command.toLowerCase() === "2") {
+      return "Ana alanım mobil uygulama geliştirme. Bunun için Flutter teknolojisini kullanmaktayım. Fakat bir web sitesi geliştirebilecek kadar bilgim de yok değil.";
+    }
+    if (command.toLowerCase() === "3") {
+      return "GitHub => https://github.com/speeedevn\nLinkedIn => https://www.linkedin.com/in/speedev/\nInstagram => https://www.instagram.com/spee.dev";
+    }
+    if (command.toLowerCase() === "4") {
+      return "İletişim için => hi@spee.dev";
+    }
+    else {
       return "Geçersiz komut. Lütfen başka bir komut deneyin.";
     }
   }
