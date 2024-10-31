@@ -1,35 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
   <meta charset="UTF-8">
-  <title>SpeeDEV (Emir Bolat)</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="terminal">
-    <div class="header">
-      <div class="buttons">
-        <div class="close"></div>
-        <div class="minimize"></div>
-        <div class="maximize"></div>
-      </div>
-      <div class="title">Emir Bolat - Yazılım Geliştiricisi</div>
-    </div>
-    <div class="body" id="terminal-body">
-      <p>Hoş geldiniz! Lütfen aşağıdaki komutlardan birini girin:</p>
-      <ol>
-        <li>Ben kimim?</li>
-        <li>Alanım ne?</li>
-        <li>Bağlantılar</li>
-        <li>İletişim</li>
-      </ol>
-    </div>
-    <div class="input-line">
-      <span>$</span>
-      <input type="text" id="command-input" autofocus>
-    </div>
-  </div>
-
-  <script src="../script.js"></script>
-</body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emir Bolat - Mobile App Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+   body {
+    font-family: 'Roboto', sans-serif;
+   }
+  </style>
+  <script>
+   function calculateAge() {
+    const birthYear = 2006;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+    document.getElementById('age').textContent = age;
+   }
+  </script>
+ </head>
+ <body onload="calculateAge()">
+  <h1>Emir Bolat ( <span id="age"></span>) - Mobile App Developer </h1>
+  <h3>About Me</h3>
+  <p>I live in Turkey. I am 18 years old. I was introduced to technology with a grey coloured (I never forget this) tube computer when I was 6-7 years old.</p>
+  <p>When I was 11 years old, Discord was instrumental in my step into software. I stepped into software with my curiosity about how Discord bots are made. I took part in the founding team of one of the most popular bots in the world.</p>
+  <p>At the age of 13-14-15, I was developing desktop applications. In the meantime, I worked with C# and Python. At the age of 16, I started to develop myself for mobile application development, which is the software field I really want. I stepped into this field with Flutter and I still use and praise this technology.</p>
+  <p>I am a person who is always hungry to learn, so I am proud of myself because not everyone can have this characteristic. I am also learning SwiftUI to be even better in my profession. I want to reach an important point in this technology.</p>
+  <h4>The past and future... <i>(This part is unimportant, don't waste time)</i>
+  </h4>
+  <p>If a person forgets his past, he cannot determine his future. Since I first stepped on the Internet, I have made many mistakes and achieved important successes. While doing all this, I have not forgotten the people who helped me.</p>
+  <p>I do not forget the past so that I can have a good future. There were many people who helped me in my software learning process. These people had an important feature: Love to share information.</p>
+  <p>I think I also have this characteristic, so I try to help as much as I can. That's why my favourite saying is ‘he who forgets his past cannot know his future’.</p>
+  <p>
+   <b>This is a photo of me when I was 16:</b>
+  </p>
+  <img src="https://avatars.githubusercontent.com/u/89213834?s=400&u=e85b103c383ce9af253e9791153f484147bfe68d&v=4" />
+  <p>
+   <i>I use old photos because I don't like taking photos :)</i>
+  </p>
+  <h3>Contact:</h3>
+  <p>
+   <a href="mailto:hi@spee.dev">hi@spee.dev</a>
+  </p>
+  <h3>Languages </h2>
+   <ul>
+    <li>HTML</li>
+    <li>JavaScript</li>
+    <li>Dart</li>
+    <li>Swift <i>(I'm learning now)</i>
+    </li>
+   </ul>
+   <h3>Technologies </h2>
+    <ul>
+     <li>Flutter</li>
+     <li>SwiftUI <i>(I'm learning now)</i>
+     </li>
+    </ul>
+    <h3>Databases </h2>
+     <ul>
+      <li>Firebase Firestore</li>
+      <li>MongoDB</li>
+      <li>MsSQL</li>
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
+      <li>SQLite</li>
+      <li>Hive</li>
+     </ul>
+     <h3>Other Tools </h2>
+      <ul>
+       <li>Firebase</li>
+       <li>OneSignal</li>
+       <li>Figma</li>
+       <li>Git</li>
+      </ul>
+      <h3>Social Media </h2>
+       <ul>
+        <li>
+         <a href="https://github.com/speeedev" target="_blank">GitHub</a>
+        </li>
+        <li>
+         <a href="https://instagram.com/spee.dev" target="_blank">Instagram</a>
+        </li>
+        <li>
+         <a href="https://x.com/yemirbo" target="_blank">X (Twitter)</a>
+        </li>
+        <li>
+         <a href="https://www.linkedin.com/in/speedev" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+         <a href="https://medium.com/@speedev" target="_blank">Medium</a>
+        </li>
+       </ul>
+       <h3>Education</h3>
+       <ul>
+        <li>
+         <strong>Computer Programming (Open Education)</strong> - Istanbul University <br>
+         <em>2024 - 2025</em>
+        </li>
+        <li>
+         <strong>Sofware Development</strong> - Sisli Vocational and Technical Anatolian High School <br>
+         <em>June 2020 - June 2024</em>
+        </li>
+       </ul>
+       <h3>Work Experience</h3>
+       <ul>
+        <li>
+         <strong>Mobile App Developer</strong> - VeriPark (Full-time) <br>
+         <em>August 2024 - Present</em>
+        </li>
+        <li>
+         <strong>Freelance Writer</strong> - ShiftDelete.Net <br>
+         <em>August 2022 - August 2024 | Remote</em>
+        </li>
+        <li>
+         <strong>Mobile Application Developer</strong> - ShiftDelete.Net (Full-time) <br>
+         <em>July 2023 - October 2023 | On-site</em>
+        </li>
+        <li>
+         <strong>Magazine Writer</strong> - MediaTrend (Freelance) <br>
+         <em>October 2023 - July 2024 | Remote</em>
+        </li>
+        <li>
+         <strong>Freelance Writer</strong> - ShiftDeleteGlobal <br>
+         <em>May 2023 - May 2024 | Remote</em>
+        </li>
+        <li>
+         <strong>Freelancer Writer</strong> - Yeşil Robot <br>
+         <em>February 2023 - May 2024 | Remote</em>
+        </li>
+        <li>
+         <strong>Freelance Writer</strong> - Sihirli Elma <br>
+         <em>October 2023 - April 2024 | Remote</em>
+        </li>
+       </ul>
+ </body>
 </html>
